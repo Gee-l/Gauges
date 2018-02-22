@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="long-title"><h3>Node 3</h3></div>
+<div id="agri-gauge">
+    <dx-bar-gauge id="gauge"
+        [startValue]="0"
+        [endValue]="100"
+        [values]="values">
+        <dxo-label>
+            <dxo-format
+                type="fixedPoint"
+                [precision]="1">
+            </dxo-format>
+        </dxo-label>
+    </dx-bar-gauge>
+</div>
+<div id="panel">
+    <dx-check-box *ngFor="let product of products"
+        [text]="product.name"
+        [(value)]="product.active"
+        (onValueChanged)="productsToValues()"
+    ></dx-check-box>
+</div>

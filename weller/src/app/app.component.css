@@ -1,0 +1,31 @@
+/deep/ #agri-gauge {
+    height: 440px;
+    width: 100%;
+}
+/deep/ #gauge {
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+    float: left;
+}
+/deep/ #panel {
+    width: 150px;
+    text-align: top;
+    margin-left: 50px;
+    position: relative;
+    top: -275px;
+    right: 16%;
+    float: right;
+    overflow: hidden;
+}
+/deep/ .dx-checkbox {
+    margin-top: -5px;
+}
+
+/deep/ .long-title h3 {
+    font-family: 'Segoe UI Light', 'Helvetica Neue Light', 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana;
+    font-size: 28px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+}
