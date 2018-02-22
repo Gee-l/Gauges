@@ -1,0 +1,28 @@
+<dx-circular-gauge
+    id="gauge"
+    [value]="50"
+    [subvalues]="[50]">
+    <dxo-subvalue-indicator type="textcloud">
+        <dxo-text [customizeText]="customizeText">
+            <dxo-format type="" [precision]="1"></dxo-format>
+        </dxo-text>
+    </dxo-subvalue-indicator>
+    <dxo-scale
+        [startValue]="0"
+        [endValue]="120"
+        [tickInterval]="20">
+        <dxo-label [customizeText]="Temperature"></dxo-label>
+    </dxo-scale>
+    <dxo-range-container [offset]="10">
+        <dxi-range [startValue]="0" [endValue]="20" color="Blue"></dxi-range>
+        <dxi-range [startValue]="20" [endValue]="40" color="Green"></dxi-range>
+        <dxi-range [startValue]="40" [endValue]="60" color="lime"></dxi-range>
+        <dxi-range [startValue]="60" [endValue]="80" color="Yellow"></dxi-range>
+        <dxi-range [startValue]="80" [endValue]="100" color="Orange"></dxi-range>
+        <dxi-range [startValue]="100" [endValue]="120" color="Red"></dxi-range>
+    </dxo-range-container>
+    <dxo-export [enabled]="true"></dxo-export>
+    <dxo-title text="Temperature">
+        <dxo-font [size]="28"></dxo-font>
+    </dxo-title>
+</dx-circular-gauge>
